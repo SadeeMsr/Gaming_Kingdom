@@ -1,0 +1,32 @@
+
+
+.NavBody{
+  height:800px;
+  position:fixed;
+  background-color: white;
+  padding: 20px;
+  z-index: 100;
+  
+}
+.d-None{
+  display: none;
+}
+@media(max-width:400px){
+  .NavBody{
+     display: none;
+    
+  }
+ .d-None{
+   display: block;
+   position: fixed;
+   z-index: 100;
+ }
+ 
+}
+
+.TopNav{
+  height:100px;
+  position:fixed;
+  width: 100%;
+  
+}
