@@ -2,6 +2,7 @@ import React from 'react';
 import SearchIcon from '@material-ui/icons/Search';
 import './Nav.css'
 const TopNav = () => {
+ const isLoggedin =  sessionStorage.getItem("isLoggedin")
   return (
     <div className="TopNav">
 
@@ -12,7 +13,12 @@ const TopNav = () => {
             <option value="">Bangladesh</option>
             <option value="">India</option>
             <option value="">USA</option>
-          </select></div>
+          </select>
+          
+           {isLoggedin && <button onClick={()=>sessionStorage.setItem('isLoggedin','')} className="btn btn-danger ml-2 ">Logout</button>}
+          
+          </div>
+
       </div>
     </div >
 

@@ -6,6 +6,7 @@ import SwiperSlide from './Slider/SwiperSlider';
 
 const Home = () => {
   return (
+    
     <div>
       <SwiperSlide></SwiperSlide>
     </div>
