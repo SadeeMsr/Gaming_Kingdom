@@ -1,8 +1,6 @@
 import React from "react";
 import { Route } from "react-router-dom";
-import Login from "../Authentication/Login";
-import Signup from "../Authentication/Signup";
-import CardDetail from "../Card-detail/CardDetail";
+import Login from "../Auth/Login";
 import Home from "../Home/Home";
 
 const NavLink = () => {
@@ -13,12 +11,6 @@ const NavLink = () => {
       </Route>
       <Route exact path="/login">
         <Login></Login>
-      </Route>
-      <Route exact path="/signup">
-        <Signup></Signup>
-      </Route>
-      <Route exact path="/card-details">
-        <CardDetail></CardDetail>
       </Route>
     </div>
   );
