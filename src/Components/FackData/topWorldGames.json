@@ -1,0 +1,31 @@
+[{
+    "id": 1,
+    "img":"https://big-skins.com/frontend/foxic-html-demo/images/skins/games/products/product-01-2.webp",
+    "author": "Gaming Kingdom",
+    "gameName":"The Game",
+    "prize": "$180"
+    }, {
+    "id": 2,
+    "img":"https://big-skins.com/frontend/foxic-html-demo/images/skins/games/products/product-02-2.webp",
+    "author": "Gaming Kingdom",
+    "gameName":"The Game",
+    "prize": "$280"
+  }, {
+    "id": 3,
+    "img":"https://big-skins.com/frontend/foxic-html-demo/images/skins/games/products/product-03-2.webp",
+    "author": "Gaming Kingdom",
+    "gameName":"The Game",
+    "prize": "$299"
+  }, {
+    "id": 4,
+    "img":"https://big-skins.com/frontend/foxic-html-demo/images/skins/games/products/product-04-2.webp",
+    "author": "Gaming Kingdom",
+    "gameName":"The Game",
+    "prize": "$245"
+  }, {
+    "id": 5,
+    "img":"https://big-skins.com/frontend/foxic-html-demo/images/skins/games/products/product-05-2.webp",
+    "author": "Gaming Kingdom",
+    "gameName":"The Game",
+    "prize": "$200"
+  }]
