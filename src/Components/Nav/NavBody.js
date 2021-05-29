@@ -1,11 +1,23 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom'
-import HomeIcon from '@material-ui/icons/Home';
-import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
-import BookmarksIcon from '@material-ui/icons/Bookmarks';
-import ScheduleIcon from '@material-ui/icons/Schedule';
+import HomeRoundedIcon from "@material-ui/icons/HomeRounded";
+import ShoppingCartRoundedIcon from "@material-ui/icons/ShoppingCartRounded";
+import BookmarksRoundedIcon from "@material-ui/icons/BookmarksRounded";
+import WatchLaterRoundedIcon from "@material-ui/icons/WatchLaterRounded";
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import './Nav.css'
+
+
+
+const iconStyle = (fontsize) => {
+  return {
+    fill: "transparent",
+    stroke: "#1a1a2c",
+    // strokeWidth: 1,
+    fontSize: fontsize
+  };
+};
+
 
 const NavBody = () => {
 
@@ -19,10 +31,11 @@ const NavBody = () => {
       <div style={style} className="NavBody shadow">
        <div className="h-25"></div>
         <div className="h-50">
-          <div className="mt-3"><NavLink className="text-dark" to="/"><HomeIcon fontSize="large"></HomeIcon></NavLink></div>
-          <div className="mt-3" ><NavLink className="text-dark" to="/"><ShoppingCartIcon fontSize="large"></ShoppingCartIcon></NavLink></div>
-          <div className="mt-3"><NavLink className="text-dark" to="/"><BookmarksIcon fontSize="large"></BookmarksIcon></NavLink></div>
-          <div className="mt-3"><NavLink className="text-dark" to="/"><ScheduleIcon fontSize="large"></ScheduleIcon></NavLink></div>
+          <div className="mt-3"><NavLink className="text-dark" to="/"><HomeRoundedIcon style={iconStyle(36)} /></NavLink></div>
+          <div className="mt-3" ><NavLink className="text-dark" to="/"><ShoppingCartRoundedIcon style={iconStyle(34)}/></NavLink></div>
+          <div className="mt-3"><NavLink className="text-dark" to="/"><BookmarksRoundedIcon style={iconStyle(30)}/></NavLink></div>
+          <div className="mt-3"><NavLink className="text-dark" to="/"><WatchLaterRoundedIcon style={iconStyle(30)}/></NavLink></div>
+          
         </div>
 
         <div className="h-25">
