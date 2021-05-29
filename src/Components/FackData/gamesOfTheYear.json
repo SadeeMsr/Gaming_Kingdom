@@ -1,0 +1,21 @@
+[{
+    "id": 1,
+    "img":"https://big-skins.com/frontend/foxic-html-demo/images/skins/games/products/product-07-1.webp",
+    "gameName":"The Game",
+    "prize": "$100"
+  }, {
+    "id": 2,
+    "img":"https://big-skins.com/frontend/foxic-html-demo/images/skins/games/products/product-08-1.webp",
+    "gameName":"The Game",
+    "prize": "$180"
+  }, {
+    "id": 3,
+    "img":"https://big-skins.com/frontend/foxic-html-demo/images/skins/games/products/product-09-1.webp",
+    "gameName":"The Game",
+    "prize": "$180"
+  }, {
+    "id": 4,
+    "img":"https://big-skins.com/frontend/foxic-html-demo/images/skins/games/products/product-10-1.webp",
+    "gameName":"The Game",
+    "prize": "$299"
+  }]

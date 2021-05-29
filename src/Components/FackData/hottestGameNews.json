@@ -1,0 +1,11 @@
+[{
+    "id": 1,
+    "img":"https://big-skins.com/frontend/foxic-html-demo/images/skins/games/blog/game-blog-01.webp",
+    "title": "This Weeks Snapshots",
+    "detail":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna."
+  },{
+    "id": 2,
+    "img":"https://big-skins.com/frontend/foxic-html-demo/images/skins/games/blog/game-blog-03.webp",
+    "title": "New Online Missions",
+    "detail":"Nullam quis hendrerit nisi. Donec porta hendrerit sollicitudin. Vestibulum elit tortor, commodo in iaculis quis, imperdiet non eros"
+  }]

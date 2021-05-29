@@ -1,0 +1,14 @@
+.fontWeight {
+  font-weight: 800;
+}
+.buttonStyle {
+  background-color: #f61212;
+  color: white;
+  padding: 8px;
+  margin: 10px;
+  border: none;
+  border-radius: 3px;
+}
+.image {
+  width: 330px;
+}
