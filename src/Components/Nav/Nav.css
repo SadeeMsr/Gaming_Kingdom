@@ -1,32 +1,37 @@
-
-
-.NavBody{
-  height:800px;
-  position:fixed;
+.NavBody {
+  height: 900px;
+  position: fixed;
   background-color: white;
-  padding: 20px;
+  padding-left: 30px;
+  padding-right: 20px;
   z-index: 100;
-  
 }
-.d-None{
-  display: none;
+.d-None {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
 }
-@media(max-width:400px){
-  .NavBody{
-     display: none;
-    
+@media (max-width: 400px) {
+  .NavBody {
+    display: none;
   }
- .d-None{
-   display: block;
-   position: fixed;
-   z-index: 100;
- }
- 
+  .selectLanguage {
+    display: none;
+  }
 }
 
-.TopNav{
-  height:100px;
-  position:fixed;
+.TopNav {
+  height: 100px;
+  position: fixed;
   width: 100%;
-  
+  padding-top: 30px;
+  padding-right: 100px;
+  z-index: 100;
+}
+
+.InputIcon {
+  position: relative;
+  top: 8px;
+  left: 30px;
 }

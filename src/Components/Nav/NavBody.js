@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom'
 import HomeIcon from '@material-ui/icons/Home';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
@@ -8,15 +8,16 @@ import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import './Nav.css'
 
 const NavBody = () => {
+
+  const [display, setdisplay] = useState(false)
+  const style = display ? {display:'block'}:{display:'none'}
   return (
     <>
-      <div className="h-25 mt-5 d-None">
-        <img width="50px" src="https://icons.iconarchive.com/icons/iconarchive/red-orb-alphabet/256/Letter-G-icon.png" alt="" />
+      <div className=" d-None mt-3">
+        <img onClick={()=>setdisplay(!display)} width="50px" src="https://icons.iconarchive.com/icons/iconarchive/red-orb-alphabet/256/Letter-G-icon.png" alt="" />
       </div>
-      <div className="NavBody shadow">
-        <div className="h-25 mt-5">
-          <img width="50px" src="https://icons.iconarchive.com/icons/iconarchive/red-orb-alphabet/256/Letter-G-icon.png" alt="" />
-        </div>
+      <div style={style} className="NavBody shadow">
+       <div className="h-25"></div>
         <div className="h-50">
           <div className="mt-3"><NavLink className="text-dark" to="/"><HomeIcon fontSize="large"></HomeIcon></NavLink></div>
           <div className="mt-3" ><NavLink className="text-dark" to="/"><ShoppingCartIcon fontSize="large"></ShoppingCartIcon></NavLink></div>

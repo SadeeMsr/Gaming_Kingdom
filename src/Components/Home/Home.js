@@ -1,39 +1,19 @@
-import React from 'react'
+import React from 'react';
+import SwiperSlide from './Slider/SwiperSlider';
+ 
 
-function Home() {
+
+
+const Home = () => {
   return (
     <div>
-      <h1>Home page</h1>
-      <h1>Home page</h1>
-      <h1>Home page</h1>
-      <h1>Home page</h1>
-      <h1>Home page</h1>
-      <h1>Home page</h1>
-      <h1>Home page</h1>
-      <h1>Home page</h1>
-      <h1>Home page</h1>
-      <h1>Home page</h1>
-      <h1>Home page</h1>
-      <h1>Home page</h1>
-      <h1>Home page</h1>
-      <h1>Home page</h1>
-      <h1>Home page</h1>
-      <h1>Home page</h1>
-      <h1>Home page</h1>
-      <h1>Home page</h1>
-      <h1>Home page</h1>
-      <h1>Home page</h1>
-      <h1>Home page</h1>
-      <h1>Home page</h1>
-      <h1>Home page</h1>
-      <h1>Home page</h1>
-      <h1>Home page</h1>
-      <h1>Home page</h1>
-      <h1>Home page</h1>
-      <h1>Home page</h1>
-      <h1>Home page</h1>
+      <SwiperSlide></SwiperSlide>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+
+ 
+
+
+export default Home;
