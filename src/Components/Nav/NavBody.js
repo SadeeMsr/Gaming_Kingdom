@@ -11,17 +11,18 @@ import './Nav.css'
 
 const iconStyle = (fontsize) => {
   return {
-    fill: "transparent",
+    fill: "white",
     stroke: "#1a1a2c",
-    // strokeWidth: 1,
+    boxShadow:'0px 0px 10px 0px white',
     fontSize: fontsize,
+    borderRadius:'10px'
   };
 };
 
 
 const NavBody = () => {
 
-  const [display, setdisplay] = useState(false)
+  const [display, setdisplay] = useState(true)
   const style = display ? {display:'block'}:{display:'none'}
   return (
     <>
@@ -31,10 +32,10 @@ const NavBody = () => {
       <div style={style} className="NavBody shadow">
        <div className="h-25"></div>
         <div className="h-50">
-          <div className="mt-3"><NavLink className="text-dark" to="/"><HomeRoundedIcon  style={iconStyle(36)} /></NavLink></div>
-          <div className="mt-3" ><NavLink className="text-dark" to="/"><ShoppingCartRoundedIcon style={iconStyle(34)}/></NavLink></div>
-          <div className="mt-3"><NavLink className="text-dark" to="/"><BookmarksRoundedIcon style={iconStyle(30)}/></NavLink></div>
-          <div className="mt-3"><NavLink className="text-dark" to="/"><WatchLaterRoundedIcon style={iconStyle(30)}/></NavLink></div>
+          <div className="mt-3"><NavLink className="text-dark" to="/"><HomeRoundedIcon  style={iconStyle(37)} /></NavLink></div>
+          <div className="mt-3" ><NavLink className="text-dark" to="/"><ShoppingCartRoundedIcon style={iconStyle(37)}/></NavLink></div>
+          <div className="mt-3"><NavLink className="text-dark" to="/"><BookmarksRoundedIcon style={iconStyle(37)}/></NavLink></div>
+          <div className="mt-3"><NavLink className="text-dark" to="/"><WatchLaterRoundedIcon style={iconStyle(37)}/></NavLink></div>
           
         </div>
 

@@ -1,40 +1,52 @@
-
-import React, { useRef, useState } from "react";
+import img1 from '../images/slider1.jpg';
+import img2 from '../images/slider2.jpg';
+import img3 from '../images/slider3.jpg';
+import img4 from '../images/slider4.jpg';
+import React, { useRef, useState } from 'react';
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
-import "swiper/swiper.min.css";
-import "swiper/components/navigation/navigation.min.css"
-import "swiper/components/pagination/pagination.min.css"
-import "./style.css";
+import 'swiper/swiper.min.css';
+import 'swiper/components/pagination/pagination.min.css';
+import 'swiper/components/navigation/navigation.min.css';
 
-import img1 from '../images/slider1.jpg'
-import img2 from '../images/slider2.jpg'
-import img3 from '../images/slider3.jpg'
-import img4 from '../images/slider4.jpg'
-
-
- 
+import './style.css';
 
 // import Swiper core and required modules
-import SwiperCore, {
-  Navigation,Pagination,Mousewheel,Keyboard
-} from 'swiper/core';
+import SwiperCore, { Keyboard, Pagination, Navigation } from 'swiper/core';
 
 // install Swiper modules
-SwiperCore.use([Navigation,Pagination,Mousewheel,Keyboard]);
-
+SwiperCore.use([Keyboard, Pagination, Navigation]);
 
 function SwiperSlider() {
-  const images = [img1,img2,img3,img4]
+  const images = [img1, img2, img3, img4];
   return (
- 
-     <div className=""><Swiper cssMode={true} navigation={true} pagination={true} mousewheel={true} keyboard={true} className="mySwiper">
-  {images.map(img=><SwiperSlide><img src={img} /></SwiperSlide>)} 
-  </Swiper> 
-    </div>
-  )
+    <>
+      <Swiper
+        slidesPerView={1}
+        spaceBetween={30}
+        keyboard={{
+          enabled: true,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        className='mySwiper'
+      >
+        {images &&
+          images.map((img) => (
+            <SwiperSlide>
+              <img src={img} alt='' />
+               <div className="slider-title-body">
+               <h1 className="slider-Title"> Hello buddy buy some products!!</h1>
+               </div>
+            </SwiperSlide>
+          ))}
+      </Swiper>
+    </>
+  );
 }
 
-export default SwiperSlider
+export default SwiperSlider;
