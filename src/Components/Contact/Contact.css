@@ -2,22 +2,40 @@
   margin-top: 30px;
   margin-bottom: 100px;
 }
+
 .contactHeading {
   text-transform: uppercase;
-  font-weight: 800;
   text-align: center;
 }
+
 .contactTitle {
   text-align: center;
   color: gray;
 }
+
+.form-sec > input[type="text"], .form-sec > input[type="text"]:focus {
+  background: transparent;
+  border: 1;
+  outline-width: 0;
+  color: white;
+}
+
+textarea {
+  background: transparent !important;
+  border: 1;
+  color: white !important;
+  width: 100%;
+  outline-width: 0
+}
+
 .contact {
-  background-image: url("../Home/images/slider1.jpg");
+  /* background-image: url("../Home/images/slider1.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100%; */
   margin: 20px 0 5px 0;
 }
+
 .form-group {
   margin: 20px;
 }
