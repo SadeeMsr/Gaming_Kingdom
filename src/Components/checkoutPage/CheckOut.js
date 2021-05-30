@@ -1,4 +1,5 @@
 import React from 'react';
+// import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { removeFromCartList } from '../../Redux/Action/CartAction';
 
@@ -11,8 +12,27 @@ function CheckOut() {
 
   const totalPrice = Data.reduce((value, current) => value + current.prize, 0);
 
+  // const [isCheckedOut, setIsCheckedOut] = useState(false);
+
+//   const noticeStyle={
+//   backgroundColor:" rgb(98, 155, 98)",
+//   width : "auto",
+//   height : "auto",
+//   padding: "20px",
+//   paddingLeft:"40px",
+//   borderRadius: "20px"
+// } 
+
+
   return (
     <div className='checkoutMain'>
+      {/* <div style={{ display: isCheckedOut? "block" : "none"}}>
+          <div style={noticeStyle}>
+              <h5>Name: xxxx </h5>
+              <h6>email: hbddh@examplee.com</h6>
+              <h4 style={{color: 'green'}}>Your have purchased successfully!</h4>
+          </div>
+      </div> */}
       <div className='container container-checkout'>
         <table class='table table-responsive p-4 bg-primary text-white'>
           <thead>
@@ -52,7 +72,8 @@ function CheckOut() {
 
           <div className='d-flex'>
             <button className='btn btn-success'>Back</button>
-            <button className='btn btn-success ml-auto'>Checkout</button>
+            {/* onClick={()=>setIsCheckedOut(true)} */}
+            <button className='btn btn-success ml-auto'>Proceed Checkout</button> 
           </div>
         </table>
       </div>

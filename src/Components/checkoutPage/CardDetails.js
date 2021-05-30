@@ -6,11 +6,20 @@ import { useParams } from 'react-router';
 import jsonData from '../FackData/data.json';
 import { addToCartList } from '../../Redux/Action/CartAction';
 import { useDispatch } from 'react-redux';
+
+
+
 const CardDetails = () => {
   const { id } = useParams();
   const dispatch = useDispatch();
   const Data = jsonData.find((item) => item.id == id);
   console.log(Data);
+
+
+  
+
+
+
   return (
     <div className='productSingle'>
       <div className='productSingle__inner'>

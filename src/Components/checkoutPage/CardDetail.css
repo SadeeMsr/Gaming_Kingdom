@@ -1,6 +1,8 @@
 .productSingle {
   padding: 5rem 3rem 3rem 3rem;
 }
+
+
 .productSingle__inner {
   display: flex;
   padding-left: 100px;

@@ -35,15 +35,18 @@ function SwiperSlider() {
         navigation={true}
         className='mySwiper'
       >
+        <div>
         {images &&
           images.map((img) => (
             <SwiperSlide>
               <img src={img} alt='' />
                <div className="slider-title-body">
-               <h1 className="slider-Title"> Hello buddy buy some products!!</h1>
+               <h1 className="slider-Title">ONLINE GAME HOUSE</h1>
+               <h5 style={{color:'red', fontWeight:'700'}}>PURCHASE YOUR DESIRED GAME</h5>
                </div>
             </SwiperSlide>
           ))}
+        </div>
       </Swiper>
     </>
   );
