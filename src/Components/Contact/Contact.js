@@ -3,29 +3,29 @@ import "./Contact.css";
 
 const Contact = () => {
   return (
-    <div className="contactContainer ">
+    <div className="contactContainer mt-5 ">
       <h1 className="contactHeading ">
-        Do you have any question? Feel free to request for a quote . . .
+         Feel Free to Contact Us
       </h1>
-      <section className="contact py-5 ">
+      <section className="contact py-1 ">
         <div className="container">
-          <div className="col-md-9 mx-auto shadow pt-3 pb-2 rounded">
+          <div className="col-md-9 mx-auto shadow-lg pt-3 pb-2 rounded">
             <form action="">
-              <div className="form-group">
+              <div className="form-group form-sec">
                 <input
                   type="text"
                   className="form-control"
                   placeholder="Name*"
                 />
               </div>
-              <div className="form-group">
+              <div className="form-group form-sec">
                 <input
                   type="text"
                   className="form-control"
                   placeholder="Email*"
                 />
               </div>
-              <div className="form-group">
+              <div className="form-group form-sec">
                 <input
                   type="text"
                   className="form-control"
