@@ -1,5 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
 import { addToCartList } from '../../Redux/Action/CartAction';
 import './style.css';
 function Card({ data }) {
@@ -13,7 +14,14 @@ function Card({ data }) {
           <div className='card-body'>
             <h4 className='card-title fontWeight'>{data.author}</h4>
             <h5 className='card-text fontWeight'>{data.gameName}</h5>
-            <h5 className='card-text fontWeight'>{data.prize}</h5>
+            <h5 className='card-text fontWeight'>${data.prize}</h5>
+
+            <Link
+              className='btn btn-warning text-white text-bold'
+              to={`/productdetails/${data.id}`}
+            >
+              Details
+            </Link>
             <button
               onClick={() => {
                 dispatch(addToCartList(data));
