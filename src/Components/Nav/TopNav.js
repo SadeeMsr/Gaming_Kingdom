@@ -19,12 +19,15 @@ const TopNav = () => {
             <SearchIcon></SearchIcon>
           </div>{' '}
           <input className='form-control' type='text'></input>
-          <select className='form-control ml-5 selectLanguage' name='' id=''>
-            <option value=''>English</option>
-            <option value=''>Bangladesh</option>
-            <option value=''>India</option>
-            <option value=''>USA</option>
-          </select>
+          <div
+            className='form-control ml-5 selectLanguage w-100 ml-3 page__Name'
+            name=''
+            id=''
+          >
+            <h5 className='pb-2'>
+              <span className='first__Name'>GAMING</span> KINGDOM
+            </h5>
+          </div>
           {isLoggedin || displayName ? (
             <button
               onClick={() => dispatch(RemoveAuthUser())}
