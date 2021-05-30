@@ -3,52 +3,56 @@
     "img":"https://big-skins.com/frontend/foxic-html-demo/images/skins/games/products/product-01-2.webp",
     "author": "Gaming Kingdom",
     "gameName":"The Game",
-    "prize": "$180"
+    "prize":  180
     }, {
     "id": 2,
     "img":"https://big-skins.com/frontend/foxic-html-demo/images/skins/games/products/product-02-2.webp",
     "author": "Gaming Kingdom",
     "gameName":"The Game",
-    "prize": "$280"
+    "prize":  280
   }, {
     "id": 3,
     "img":"https://big-skins.com/frontend/foxic-html-demo/images/skins/games/products/product-03-2.webp",
     "author": "Gaming Kingdom",
     "gameName":"The Game",
-    "prize": "$299"
+    "prize":  200
   }, {
     "id": 4,
     "img":"https://big-skins.com/frontend/foxic-html-demo/images/skins/games/products/product-04-2.webp",
     "author": "Gaming Kingdom",
     "gameName":"The Game",
-    "prize": "$245"
+    "prize":  700
   }, {
     "id": 5,
     "img":"https://big-skins.com/frontend/foxic-html-demo/images/skins/games/products/product-05-2.webp",
     "author": "Gaming Kingdom",
     "gameName":"The Game",
-    "prize": "$200"
+    "prize":  300
   }, {
     "id": 6,
     "img":"https://big-skins.com/frontend/foxic-html-demo/images/skins/games/products/product-07-1.webp",
+    "author": "Gaming Kingdom",
     "gameName":"The Game",
-    "prize": "$100"
+    "prize":  300
   }, {
     "id": 7,
     "img":"https://big-skins.com/frontend/foxic-html-demo/images/skins/games/products/product-08-1.webp",
+    "author": "Gaming Kingdom",
     "gameName":"The Game",
-    "prize": "$180"
+    "prize":  400
   }, {
     "id": 8,
     "img":"https://big-skins.com/frontend/foxic-html-demo/images/skins/games/products/product-09-1.webp",
+    "author": "Gaming Kingdom",
     "gameName":"The Game",
-    "prize": "$180"
+    "prize":  500
   }, {
     "id": 9,
     "name": "Mustafizur Rahman",
     "img":"https://big-skins.com/frontend/foxic-html-demo/images/skins/games/products/product-10-1.webp",
+    "author": "Gaming Kingdom",
     "gameName":"The Game",
-    "prize": "$299"
+    "prize":  409
   }, {
     "id": 10,
     "img":"https://big-skins.com/frontend/foxic-html-demo/images/skins/games/blog/game-blog-01.webp",

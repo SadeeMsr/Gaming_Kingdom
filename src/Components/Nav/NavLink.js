@@ -2,6 +2,7 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 import Login from '../Authentication/Login';
 import Signup from '../Authentication/Signup';
+import CheckOut from '../checkoutPage/CheckOut';
 import CheckoutPage from '../checkoutPage/CheckoutPage';
 import Home from '../Home/Home';
 
@@ -18,7 +19,7 @@ const NavLink = () => {
         <Signup></Signup>
       </Route>
       <Route exact path='/checkout'>
-        <CheckoutPage></CheckoutPage>
+        <CheckOut></CheckOut>
       </Route>
     </div>
   );
