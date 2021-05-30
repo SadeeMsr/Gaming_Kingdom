@@ -1,7 +1,7 @@
 .NavBody {
   height: 900px;
   position: fixed;
-  background-color: white;
+  background-color: #01adfd2f;
   padding-left: 30px;
   padding-right: 20px;
   z-index: 100;
@@ -13,12 +13,17 @@
   left: 10px;
   z-index: 1000;
 }
-@media (max-width: 400px) {
+
+@media (max-width: 660px) {
+  .SearchInpit {
+    display: block;
+    margin: auto !important;
+  }
   .NavBody {
     display: none;
   }
   .selectLanguage {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -35,4 +40,9 @@
   position: relative;
   top: 8px;
   left: 30px;
+  color: gray;
+}
+
+.text-dark {
+  color: white !important;
 }

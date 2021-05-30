@@ -5,6 +5,7 @@ import topWorldGames from "../FackData/topWorldGames.json";
 import gamesOfTheYear from "../FackData/gamesOfTheYear.json";
 import hottestGameNews from "../FackData/hottestGameNews.json";
 import Contact from "../Contact/Contact";
+import Card from "../Shared/Card";
 
 const Home = () => {
   const [topWorldGamesData, setTopWorldGamesData] = useState([]);
@@ -27,55 +28,15 @@ const Home = () => {
         <h1 className="text-center mt-5 fontWeight">TOP WORLD GAMES</h1>
         <div class="row">
           {topWorldGamesData.map((topWorldGamesData) => (
-            <div className="col mt-5 mb-5">
-              <div className="card text-center shadow bg-body rounded">
-                <img
-                  src={topWorldGamesData.img}
-                  className="card-img-top"
-                  alt=""
-                />
-                <div className="card-body">
-                  <h4 className="card-title fontWeight">
-                    {topWorldGamesData.author}
-                  </h4>
-                  <h5 className="card-text fontWeight">
-                    {topWorldGamesData.gameName}
-                  </h5>
-                  <h5 className="card-text fontWeight">
-                    {topWorldGamesData.prize}
-                  </h5>
-                  <button type="button" className="buttonStyle">
-                    Add To Cart
-                  </button>
-                </div>
-              </div>
-            </div>
-          ))}
+  
+             <Card data={topWorldGamesData} ></Card>
+             ))}
         </div>
         <h1 className="text-center mt-5 fontWeight">GAMES OF THE YEAR</h1>
         <div className="row">
           {gamesOfTheYearData.map((gamesOfTheYearData) => (
-            <div className="col mt-5 mb-5">
-              <div className="card text-center shadow bg-body rounded">
-                <img
-                  src={gamesOfTheYearData.img}
-                  className="card-img-top"
-                  alt=""
-                />
-                <div className="card-body">
-                  <h4 className="card-text fontWeight">
-                    {gamesOfTheYearData.gameName}
-                  </h4>
-                  <h5 className="card-text fontWeight">
-                    {gamesOfTheYearData.prize}
-                  </h5>
-                  <button type="button" className="buttonStyle">
-                    Add To Cart
-                  </button>
-                </div>
-              </div>
-            </div>
-          ))}
+            <Card data={gamesOfTheYearData} ></Card>
+             ))}
         </div>
         <h1 className="mt-5 fontWeight">HOTTEST GAMES NEWS</h1>
         <div className="row">

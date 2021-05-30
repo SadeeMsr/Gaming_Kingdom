@@ -14,7 +14,7 @@ const iconStyle = (fontsize) => {
     fill: "transparent",
     stroke: "#1a1a2c",
     // strokeWidth: 1,
-    fontSize: fontsize
+    fontSize: fontsize,
   };
 };
 
@@ -31,7 +31,7 @@ const NavBody = () => {
       <div style={style} className="NavBody shadow">
        <div className="h-25"></div>
         <div className="h-50">
-          <div className="mt-3"><NavLink className="text-dark" to="/"><HomeRoundedIcon style={iconStyle(36)} /></NavLink></div>
+          <div className="mt-3"><NavLink className="text-dark" to="/"><HomeRoundedIcon  style={iconStyle(36)} /></NavLink></div>
           <div className="mt-3" ><NavLink className="text-dark" to="/"><ShoppingCartRoundedIcon style={iconStyle(34)}/></NavLink></div>
           <div className="mt-3"><NavLink className="text-dark" to="/"><BookmarksRoundedIcon style={iconStyle(30)}/></NavLink></div>
           <div className="mt-3"><NavLink className="text-dark" to="/"><WatchLaterRoundedIcon style={iconStyle(30)}/></NavLink></div>
@@ -39,7 +39,7 @@ const NavBody = () => {
         </div>
 
         <div className="h-25">
-          <div className="mt-3"><NavLink to="/login"><AccountCircleIcon fontSize="large"></AccountCircleIcon></NavLink></div>
+          <div className="mt-3"><NavLink className="text-white" to="/login"><AccountCircleIcon fontSize="large"></AccountCircleIcon></NavLink></div>
         </div>
 
       </div>

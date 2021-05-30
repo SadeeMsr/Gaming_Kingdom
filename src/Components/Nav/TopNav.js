@@ -7,7 +7,7 @@ const TopNav = () => {
     <div className="TopNav">
 
       <div className="d-flex">
-        <div className="ml-auto d-flex"> <div className="InputIcon"><SearchIcon></SearchIcon></div> <input className="form-control" type="text"></input>
+        <div className="ml-auto d-flex SearchInpit"> <div className="InputIcon"><SearchIcon></SearchIcon></div> <input className="form-control" type="text"></input>
           <select className="form-control ml-5 selectLanguage" name="" id="">
             <option value="">English</option>
             <option value="">Bangladesh</option>

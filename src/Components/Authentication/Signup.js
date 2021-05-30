@@ -44,7 +44,7 @@ const Signup = () => {
      }
      console.log(msg)
     return (
-        <div>
+        <div className="row">
             <div className="col-md-6 offset-md-3">
                 <div className="form mt-5">
                 {errMsg && <div class="alert alert-warning alert-dismissible fade show" role="alert">
