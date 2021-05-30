@@ -7,6 +7,16 @@
   z-index: 100;
 }
 
+.page__Name > h5{
+  font-weight: 700;
+}
+
+.first__Name{
+  color: red;
+  font-style: italic;
+  font-weight: 900;
+}
+
 .d-None {
   position: fixed;
   top: 10px;
@@ -15,7 +25,7 @@
 }
 
 @media (max-width: 660px) {
-  .SearchInpit {
+  .SearchInput {
     display: block;
     margin: auto !important;
   }

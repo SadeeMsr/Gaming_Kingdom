@@ -7,13 +7,10 @@ const TopNav = () => {
     <div className="TopNav">
 
       <div className="d-flex">
-        <div className="ml-auto d-flex SearchInpit"> <div className="InputIcon"><SearchIcon></SearchIcon></div> <input className="form-control" type="text"></input>
-          <select className="form-control ml-5 selectLanguage" name="" id="">
-            <option value="">English</option>
-            <option value="">Bangladesh</option>
-            <option value="">India</option>
-            <option value="">USA</option>
-          </select>
+        <div className="ml-auto d-flex SearchInput"> <div className="InputIcon"><SearchIcon></SearchIcon></div> <input className="form-control" type="text"></input>
+          <div className="w-100 ml-3 page__Name">
+              <h5 className="pt-2"><span className="first__Name">GAMING</span> KINGDOM</h5>
+          </div>
           
            {isLoggedin && <button onClick={()=>sessionStorage.setItem('isLoggedin','')} className="btn btn-danger ml-2 ">Logout</button>}
           
