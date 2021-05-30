@@ -16,11 +16,14 @@ import {
 } from './firebase/firebase.config';
 import { useHistory, useLocation } from 'react-router';
 import { Link } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
 !firebase.apps.length ? firebase.initializeApp(firebaseConfig) : firebase.app();
 
 const Login = () => {
+  const dispatch = useDispatch();
+
   const [inputData, setinputData] = useState({ email: '', password: '' });
-  const [loggedinUser, setLoggedinUser] = useState({});
+  const [loggedinUser, setLoggedinUser] = useState([]);
   const [errMsg, seterrMsg] = useState('');
   const googleProvider = new firebase.auth.GoogleAuthProvider();
   const facebookProvider = new firebase.auth.FacebookAuthProvider();
@@ -87,7 +90,8 @@ const Login = () => {
                     goHistotyPage,
                     email,
                     password,
-                    seterrMsg
+                    seterrMsg,
+                    dispatch
                   )
                 }
                 class='input group btn'
@@ -110,7 +114,8 @@ const Login = () => {
                 googleProvider,
                 setLoggedinUser,
                 goHistotyPage,
-                seterrMsg
+                seterrMsg,
+                dispatch
               )
             }
             className=' p-1 social-log'
@@ -130,7 +135,8 @@ const Login = () => {
                 facebookProvider,
                 setLoggedinUser,
                 goHistotyPage,
-                seterrMsg
+                seterrMsg,
+                dispatch
               )
             }
             className=' p-1 social-log'
@@ -150,7 +156,8 @@ const Login = () => {
                 githubProvider,
                 setLoggedinUser,
                 goHistotyPage,
-                seterrMsg
+                seterrMsg,
+                dispatch
               )
             }
             className=' p-1 social-log'

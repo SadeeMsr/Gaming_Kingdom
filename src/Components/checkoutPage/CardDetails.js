@@ -2,19 +2,23 @@ import React from 'react';
 import './CardDetail.css';
 import ShoppingCartRoundedIcon from '@material-ui/icons/ShoppingCartRounded';
 import { FaLocationArrow } from 'react-icons/fa';
-
-const CheckoutPage = () => {
+import { useParams } from 'react-router';
+import jsonData from '../FackData/data.json';
+import { addToCartList } from '../../Redux/Action/CartAction';
+import { useDispatch } from 'react-redux';
+const CardDetails = () => {
+  const { id } = useParams();
+  const dispatch = useDispatch();
+  const Data = jsonData.find((item) => item.id == id);
+  console.log(Data);
   return (
     <div className='productSingle'>
       <div className='productSingle__inner'>
         <div className='productSingle__image shadow-lg'>
-          <img
-            src='https://assets.hongkiat.com/uploads/ps3-game-covers/Alone-in-the-Dark.jpg'
-            alt='imageName'
-          />
+          <img src={Data.img} alt='imageName' />
         </div>
         <div className='productSingle__details'>
-          <h2>The Game of Thrones</h2>
+          <h2>{Data.gameName}</h2>
           <ul className='productSingle__features'>
             <li>
               {' '}
@@ -67,11 +71,16 @@ const CheckoutPage = () => {
           </ul>
           <span className='productSingle__footer'>
             <p className='productSingle__price'>
-              <h4>$ 108</h4>
+              <h4>$ {Data.prize}</h4>
             </p>
             <div className='buttons'>
-              <button className='btn btn-primary shadow'>
-                <ShoppingCartRoundedIcon /> Added
+              <button
+                onClick={() => {
+                  dispatch(addToCartList(Data));
+                }}
+                className='btn btn-primary shadow'
+              >
+                <ShoppingCartRoundedIcon /> ADD TO CART
               </button>
             </div>
           </span>
@@ -81,4 +90,4 @@ const CheckoutPage = () => {
   );
 };
 
-export default CheckoutPage;
+export default CardDetails;

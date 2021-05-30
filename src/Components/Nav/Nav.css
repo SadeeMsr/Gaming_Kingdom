@@ -14,15 +14,25 @@
   z-index: 1000;
 }
 
+.SearchInput {
+  margin-left: auto;
+}
+
 @media (max-width: 660px) {
-  .SearchInpit {
+  .SearchInput {
     display: block;
-    margin: auto !important;
+    position: absolute;
+    left: 60px;
+    top: 30px;
   }
   .NavBody {
     display: none;
   }
   .selectLanguage {
+    display: none !important;
+  }
+
+  .logoutbtn {
     display: none !important;
   }
 }
