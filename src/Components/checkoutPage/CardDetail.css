@@ -81,3 +81,12 @@
     margin: 1rem 0 1rem 2rem;
   }
 }
+
+.checkoutMain {
+  min-height: 1000px;
+}
+
+.container-checkout {
+  position: relative;
+  top: 150px;
+}

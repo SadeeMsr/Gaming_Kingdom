@@ -23,7 +23,7 @@
     "react-redux": "^7.2.4",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
-    "stripe": "^8.150.0",
+    "redux-devtools-extension": "^2.13.9",
     "swiper": "^6.6.2",
     "web-vitals": "^1.1.2"
   },
