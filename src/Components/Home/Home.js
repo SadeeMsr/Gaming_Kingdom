@@ -1,46 +1,41 @@
 import React, { useEffect, useState } from 'react';
 import './Home.css';
 import SwiperSlide from './Slider/SwiperSlider';
-import topWorldGames from '../FackData/topWorldGames.json';
-import gamesOfTheYear from '../FackData/gamesOfTheYear.json';
-import hottestGameNews from '../FackData/hottestGameNews.json';
 import Contact from '../Contact/Contact';
 import Card from '../Shared/Card';
 import Title from '../Shared/Title';
+import { useSelector } from 'react-redux';
 
 const Home = () => {
-  const [topWorldGamesData, setTopWorldGamesData] = useState([]);
-  useEffect(() => {
-    setTopWorldGamesData(topWorldGames);
-  }, []);
-  const [gamesOfTheYearData, setGamesOfTheYearData] = useState([]);
-  useEffect(() => {
-    setGamesOfTheYearData(gamesOfTheYear);
-  }, []);
-  const [hottestGameNewsData, setHottestGameNewsData] = useState([]);
-  useEffect(() => {
-    setHottestGameNewsData(hottestGameNews);
-  }, []);
+  const Data = useSelector((state) => {
+    return state.books.discoverList;
+  });
+
+  console.log(Data);
+
   return (
     <div>
       <SwiperSlide></SwiperSlide>
-      <div className='container-fluid'>
+      <div className='col-md-10 offset-md-1'>
         <h1 className='text-center mt-5 fontWeight'>
           <Title data={{ title: 'TOP WORLD GAMES' }}></Title>{' '}
         </h1>
         <div class='row'>
-          {topWorldGamesData.map((topWorldGamesData) => (
+          {Data.slice(0, 9).map((topWorldGamesData) => (
             <Card data={topWorldGamesData}></Card>
           ))}
         </div>
+
         <h1 className='text-center mt-5 fontWeight'>
           <Title data={{ title: 'GAMES OF THE YEAR' }}></Title>{' '}
         </h1>
 
         <div className='row'>
-          {gamesOfTheYearData.map((gamesOfTheYearData) => (
-            <Card data={gamesOfTheYearData}></Card>
-          ))}
+          {Data.slice(0, 9)
+            .reverse()
+            .map((gamesOfTheYearData) => (
+              <Card data={gamesOfTheYearData}></Card>
+            ))}
         </div>
         <h1 className='text-center mt-5 fontWeight'>
           <Title data={{ title: 'HOTTEST GAMES NEWS' }}></Title>
@@ -48,7 +43,7 @@ const Home = () => {
 
         <div className='row'>
           <div className='col-md-12 mt-2 mb-5 p-auto d-flex'>
-            {hottestGameNewsData.map((hottestGameNewsData) => (
+            {Data.slice(9, 11).map((hottestGameNewsData) => (
               <div className='card mb-3 '>
                 <div className='row'>
                   <div className='col-md-4'>

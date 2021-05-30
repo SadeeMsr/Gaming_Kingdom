@@ -43,6 +43,12 @@
   color: gray;
 }
 
-.text-dark {
+.icon-Color {
   color: white !important;
+}
+.cartLength {
+  background-color: red;
+  padding: 7px;
+  border-radius: 100px;
+  font-weight: 900;
 }
